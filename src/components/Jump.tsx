@@ -1,6 +1,7 @@
 import Hero from "./Hero";
 import Navbar from "./Navbar";
 import Projects from "./Projects";
+import Contact from "./Contact";
 
 const Jump = () => {
   return (
@@ -9,6 +10,7 @@ const Jump = () => {
         <Navbar />
         <Hero />
         <Projects />
+        <Contact/>
       </div>
     </>
   );
