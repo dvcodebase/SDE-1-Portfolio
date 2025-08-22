@@ -42,7 +42,7 @@ const Contact: React.FC = () => {
 
   return (
     <>
-    <div className="mb-50">
+    <div className="max-w-screen-2x1 container mx-auto md:mb-50">
       <div className="max-w-md mx-auto mt-10 p-4 border rounded shadow">
       <h2 className="text-2xl font-semibold mb-4">Contact Us</h2>
       <form onSubmit={handleSubmit}>

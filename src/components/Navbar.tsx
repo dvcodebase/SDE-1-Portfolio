@@ -4,14 +4,14 @@ function Navbar() {
   return (
     <>
       <div>
-        <div className="navbar px-10 py-3 fixed top-0 z-50 w-full  ">
-          <div className="navbar-start">
+        <div className="max-w-screen-2x1 container mx-auto navbar fixed top-0 z-50  bg-white ">
+          <div className="navbar-start ml-10 md:ml-20">
             <img src={logo} className="h-10 w-10" />
           </div>
-          {/* <div className="navbar-center">
+          <div className="navbar-center">
           <h1 className="text-2xl"> Portfolio </h1>
-        </div> */}
-          <div className="navbar-end ">
+        </div>
+          <div className="navbar-end mr-10 md:mr-20">
             <div className="dropdown">
               <div
                 tabIndex={0}

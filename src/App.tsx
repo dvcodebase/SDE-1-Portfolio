@@ -6,7 +6,7 @@ import Projects from "./components/Projects";
 function App() {
   return (
     <>
-      <div>
+      <div className="w-screen">
         <Routes>
           <Route path="/" element={<Jump />} />
           <Route path="/projects" element={<Projects />} />

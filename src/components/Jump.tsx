@@ -1,15 +1,17 @@
 import Hero from "./Hero";
 import Navbar from "./Navbar";
-import Projects from "./Projects";
+// import Projects from "./Projects";
+import ProjectCard from "./ProjectCard";
+
 import Contact from "./Contact";
 
 const Jump = () => {
   return (
     <>
-      <div>
+      <div className="max-w-screen-2x1 container mx-auto">
         <Navbar />
         <Hero />
-        <Projects />
+        <ProjectCard /> 
         <Contact/>
       </div>
     </>
