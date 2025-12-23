@@ -10,17 +10,16 @@ function Hero() {
       <div className="max-w-screen-2x1 container mx-auto hero-content min-h-screen flex flex-col  md:flex-row items-center cursor-default">
         <div className="order-2 md:order-1 md:mt-10 flex flex-col hero-left p-4 justify-items-center">
           <h1 className="text-2xl md:text-5xl font-bold">
-            Hi, I'm Dheeraj - SDE1
+            Hi, I'm Dheeraj 
           </h1>
           <h3 className="text-sm md:text-2xl">
-            <i>Aspiring SDE | MERN Stack Developer | AI/ML Enthusiast</i>
+            <i>Machine Learning Engineer | AI/ML | MLOps</i>
           </h3>
 
           <p className="mb-2 md:mt-4 text-sm md:text-xl  max-w-2xl">
-            B.Tech CSE (AI/ML) student with hands-on experience in full-stack
-            development, data analytics (SQL, Power BI), and machine learning.
-            Strong in DSA (LeetCode max: 1425). Exploring GenAI, AWS, and
-            open-source. Seeking full-time SDE roles.
+            Machine Learning Engineer with hands-on experience in end-to-end ML
+            pipelines, MLOps (CI/CD, Docker, AWS), NLP, and Generative AI using
+            Transformers and RAG systems.
           </p>
 
           <div className="flex flex-col md:flex-row md:space-x-10 md:mt-6 align-middle items-center justify-center">
