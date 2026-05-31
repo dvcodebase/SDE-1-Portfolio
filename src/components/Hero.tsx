@@ -23,16 +23,22 @@ function Hero() {
           </p>
 
           <div className="flex flex-col md:flex-row md:space-x-10 md:mt-6 align-middle items-center justify-center">
-            <div className="m-5">
+            {/* <div className="m-5">
               <a
                 href="#projects"
                 className="text-sm px-6 py-3 bg-gray-300 text-white rounded-lg hover:bg-blue-100 transition font-bold"
               >
                 Explore My Work
               </a>
-            </div>
+            </div> */}
 
             <div className="flex flex-row mt-5 mb-5 space-x-5 items-center justify-center">
+              <a
+                href="#projects"
+                className="text-2xl px-6 py-3 bg-gray-300 text-white rounded-lg hover:bg-blue-100 transition font-bold"
+              >
+                 Explore My Work 
+              </a>
               <a href={cvpdf} title="save icons" download>
                 <img src={downloadcv} className="h-10 w-10" />
               </a>
