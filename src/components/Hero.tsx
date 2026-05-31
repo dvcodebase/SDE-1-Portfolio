@@ -40,7 +40,7 @@ function Hero() {
                  Explore My Work 
               </a>
               <a href={cvpdf} title="save icons" download>
-                <img src={downloadcv} className="h-10 w-10" />
+                <img src={downloadcv} alt="Download CV" className="h-10 w-10" />
               </a>
               <a href="https://github.com/dvcodebase">
                 <img src={github} className="w-10 h-10" />
