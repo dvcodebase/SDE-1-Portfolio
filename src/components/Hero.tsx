@@ -1,62 +1,105 @@
-import downloadcv from "/cv.svg";
 import cvpdf from "/cv.pdf";
 import github from "/github.svg";
 import linkedin from "/linkedin.svg";
-import hero from "/hero.png";
+import hero from "/hero.gif";
 
 function Hero() {
   return (
-    <>
-      <div className="max-w-screen-2x1 container mx-auto hero-content min-h-screen flex flex-col  md:flex-row items-center cursor-default">
-        <div className="order-2 md:order-1 md:mt-10 flex flex-col hero-left p-4 justify-items-center">
-          <h1 className="text-2xl md:text-5xl font-bold">
-            Hi, I'm Dheeraj 
-          </h1>
-          <h3 className="text-sm md:text-2xl">
-            <i>Machine Learning Engineer | AI/ML | MLOps</i>
-          </h3>
-
-          <p className="mb-2 md:mt-4 text-sm md:text-xl  max-w-2xl">
-            Machine Learning Engineer with hands-on experience in end-to-end ML
-            pipelines, MLOps (CI/CD, Docker, AWS), NLP, and Generative AI using
-            Transformers and RAG systems.
+    <section id="home" className="min-h-screen md:px-16 flex items-center pt-16">
+      <div
+        className="container mx-auto px-6 md:px-16 flex flex-col
+                   md:flex-row items-center gap-12"
+      >
+        {/* LEFT */}
+        <div className="flex-1 order-2 md:order-1">
+          {/* Tag line */}
+          <p
+            className="text-xs font-mono uppercase tracking-widest
+                       text-orange-600 mb-4 flex items-center gap-2"
+          >
+            <span className="inline-block w-6 h-px bg-orange-600"></span>
+            Machine Learning Engineer
           </p>
 
-          <div className="flex flex-col md:flex-row md:space-x-10 md:mt-6 align-middle items-center justify-center">
-            {/* <div className="m-5">
-              <a
-                href="#projects"
-                className="text-sm px-6 py-3 bg-gray-300 text-white rounded-lg hover:bg-blue-100 transition font-bold"
-              >
-                Explore My Work
-              </a>
-            </div> */}
+          <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-2">
+            Hi👋🏻,
+            <br /> I'm{" "}
+            <em className="not-italic text-orange-600">Dheeraj verma</em>
+          </h1>
 
-            <div className="flex flex-row mt-5 mb-5 space-x-5 items-center justify-center">
+          <p
+            className="font-mono text-sm text-gray-400 border-l-2
+                       border-orange-500 pl-3 mb-6"
+          >
+            AI/ML · MLOps · Generative AI · Problem Solver
+          </p>
+
+          <p
+            className="text-gray-600 text-base md:text-lg leading-relaxed
+                       max-w-xl mb-8"
+          >
+            Machine Learning Engineer focused on building scalable AI
+            applications. Experienced in MLOps, NLP, Generative AI, and cloud
+            deployment, with projects spanning sentiment analysis, image
+            processing, and intelligent automation.
+          </p>
+
+          <div className="flex flex-wrap items-center gap-4">
+            {/* PRIMARY BUTTON — was gray-300 (invisible white text) */}
+            <a
+              href="#projects"
+              className="px-6 py-3 bg-gray-900 !text-white text-sm
+                         font-semibold tracking-wide uppercase rounded-sm
+                         hover:bg-orange-600 transition-colors"
+            >
+              EXPLORE PROJECTS
+            </a>
+
+            {/* GHOST BUTTON — new CV download with text */}
+            <a
+              href={cvpdf}
+              download
+              className="px-6 py-3 border border-gray-300 !text-gray-700
+                         text-sm font-semibold tracking-wide uppercase rounded-sm
+                         hover:border-gray-900 transition-colors flex items-center gap-2"
+            >
+              Download CV
+            </a>
+
+            {/* Social icons */}
+            <div className="flex gap-3 ml-1">
               <a
-                href="#projects"
-                className="text-2xl px-6 py-3 bg-gray-300 text-white rounded-lg hover:bg-blue-100 transition font-bold"
+                href="https://github.com/dvcodebase"
+                className="w-10 h-10 border border-gray-200 rounded-sm
+                           flex items-center justify-center
+                           hover:border-gray-900 transition-colors"
               >
-                 Explore My Work 
+                <img src={github} className="w-5 h-5" alt="GitHub" />
               </a>
-              <a href={cvpdf} title="save icons" download>
-                <img src={downloadcv} alt="Download CV" className="h-10 w-10" />
-              </a>
-              <a href="https://github.com/dvcodebase">
-                <img src={github} className="w-10 h-10" />
-              </a>
-              <a href="https://www.linkedin.com/in/-dheeraj-verma/">
-                <img src={linkedin} className="w-10 h-10" />
+              <a
+                href="https://www.linkedin.com/in/-dheeraj-verma/"
+                className="w-10 h-10 border border-gray-200 rounded-sm
+                           flex items-center justify-center
+                           hover:border-gray-900 transition-colors"
+              >
+                <img src={linkedin} className="w-5 h-5" alt="LinkedIn" />
               </a>
             </div>
           </div>
         </div>
-        <div className="order-1 mt-12 hero-right flex flex-col items-center justify-center">
-          <img src={hero} className="h-80 w-50 md:h-100 md:w-100" />
+
+        {/* RIGHT — hero image with subtle ring */}
+        <div className="flex-1 order-1 md:order-2 flex justify-center">
+          <div className="relative">
+            <img
+              src={hero}
+              className="h-64 w-64 md:h-96 md:w-96 object-contain"
+              alt="ML engineer terminal animation"
+            />
+          </div>
         </div>
       </div>
-    </>
+    </section>
   );
 }
-
 export default Hero;

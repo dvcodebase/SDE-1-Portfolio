@@ -1,13 +1,17 @@
-/* @import "tailwindcss";
-@plugin "daisyui"; */
+@import "tailwindcss";
+@plugin "daisyui";
 
-*{ 
-  box-sizing: border-box;
-  font-family: 'Times New Roman', Times, serif;
-  padding: 2px;
+/* Set base font on body only — Tailwind can override per-element */
+body {
+  font-family: 'Outfit', system-ui, sans-serif;
 }
 
-a{
-  text-decoration:none;
+a {
+  text-decoration: none;
   color: inherit;
+}
+
+/* Optional: smooth scroll for anchor nav links */
+html {
+  scroll-behavior: smooth;
 }

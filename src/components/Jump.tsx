@@ -1,19 +1,25 @@
 import Hero from "./Hero";
 import Navbar from "./Navbar";
-// import Projects from "./Projects";
-// import ProjectCard from "./ProjectCard";
-
 import Contact from "./Contact";
+// Uncomment as you build each section:
+import Skills from "./Skills";      // new
+import Projects from "./Projects";
+import Experience from "./Experience";  // build this next
+import DSA from "./DSA"  // DSA Problem Solving
 
 const Jump = () => {
+     {/* ✅ Fixed: removed redundant container wrapper Navbar is fixed, each section gets its own id */}   
   return (
     <>
-      <div className="max-w-screen-2x1 container mx-auto">
-        <Navbar />
+      <Navbar />
+      <main>
         <Hero />
-        {/* <ProjectCard />  */}
-        <Contact/>
-      </div>
+        <Skills />
+        <Projects />
+        <Experience />
+        <DSA/>
+        <Contact />
+      </main>
     </>
   );
 };
